@@ -36,7 +36,12 @@ $('#generate').on('click', function() {
             break;
         }
 
-        let [_m, _count, name] = m;
+        let [_m, count, name] = m;
+
+        if (count > 4) {
+            errors.append(`<p class="warning">warning: 5+ copies: ${name}</p>`);
+        }
+
         names.push(name);
     }
 
