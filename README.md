@@ -4,4 +4,6 @@ https://mcandre.github.io/rafiki/
 
 # ABOUT
 
-rafiki generates index cards to assist with quickly navigating decks. Good for decks large and small, simple and complex.
+rafiki generates printable index cards!
+
+Index cards assist with Lorcana deck navigation. Good for decks large and small, simple and complex.
