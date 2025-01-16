@@ -25,11 +25,11 @@ nav img, nav h1, #deck, #index, .index, img .color, .cost, .name {
 }
 
 article {
-    padding: 1em;
+    padding: 0 1em 0 1em;
 }
 
 footer {
-    padding: 1em;
+    padding: 2em;
     text-align: right;
 }
 
