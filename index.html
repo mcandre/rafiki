@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Rafiki</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="layout.css">
+</head>
+<body>
+<nav class="d-print-none">
+<div>
+    <img src="rafiki.png" width="44" height="64" alt="simian spirit guide">
+    <h1>Rafiki</h1>
+</div>
+</nav>
+<article>
+<div id="deck" class="d-print-none">
+    <h2>Deck</h2>
+    <div id="deck_form">
+        <div>
+            <textarea id="deck_list" cols="40" rows="10">4 Skull Rock - Isolated Fortress
+4 Wendy Darling - Courageous Captain
+4 Mr. Smee - Bumbling Mate
+4 Mr. Smee - Captain of the Jolly Roger
+4 Mr. Smee - Steadfast Mate
+4 Captain Hook - Forceful Duelist
+4 Moana - Self-Taught Sailor
+4 John Silver - Ship's Cook
+4 Minnie Mouse - Pirate Lookout
+4 Vanellope von Schweetz - Gutsy Go-Getter
+2 Agrabah - Marketplace
+4 The Bayou - Mysterious Swamp
+2 Ratigan's Party - Seedy Back Room
+2 Brawl
+2 Captain Hook's Rapier
+4 John Silver - Greedy Treasure Seeker
+2 Be Prepared
+2 Ba-boom!</textarea>
+        </div>
+        <div id="generate_controls">
+            <img id="generate_spinner" src="spinner.gif" style="display:none" width="16" height="16" alt="loading" />
+            <button id="generate">Generate</button>
+        </div>
+    </div>
+    <div id="errors"></div>
+</div>
+<div id="index">
+    <h2 class="d-print-none">Index</h2>
+    <div id="index_list"></div>
+</div>
+</article>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script type="text/javascript" src="rafiki.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+body {
+    padding: 1em;
+}
+
+@page {
+    margin: 0.25cm;
+}
+
+nav, #deck_form, #errors {
+    padding-bottom: 1em;
+}
+
+nav img, nav h1, #deck, #index, .index, img .color, .cost, .name {
+    display: inline-block;
+}
+
+#deck, #index {
+    vertical-align: top;
+}
+
+#deck {
+    margin-right: 1em;
+}
+
+#generate_controls {
+    text-align: right;
+}
+
+#errors {
+    color: red;
+}
+
+.index {
+    border: 1px solid black;
+    font-size: 9px;
+    height: 3.5in;
+    margin: 0 0.5em 0.5em 0.5em;
+    padding: 0.5em;
+    vertical-align: top;
+    width: 2.5in;
+}
+
+.tcg_card {
+    padding-bottom: 0.15em;
+}
+
+.color, .cost {
+    margin-right: 0.25em;
+}
+
+.cost {
+    width: 16px;
+    height: 16px;
+}
+
+nav img, nav h1, .cost {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.cost {
+    background-position: center;
+}
+
+.inkable, .uninkable {
+    -webkit-print-color-adjust: exact !important; /* Chrome, Safari 6 – 15.3, Edge */
+    color-adjust: exact !important;               /* Firefox 48 – 96 */
+    print-color-adjust: exact !important;         /* Firefox 97+, Safari 15.4+ */
+}
+
+.inkable {
+    background-image: url("symbols/inkable.png");
+}
+
+.uninkable {
+    background-image: url("symbols/uninkable.png");
+}
+
+.name {
+    /*
+     * Most of:
+     *
+     * * Crabominable
+     * * Asmoranomardicadaistinaculdacar
+     * * Institute of Technology - Prestigious University
+     *
+     */
+    overflow: hidden;
+    text-align: left;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 19em;
+}
