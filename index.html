@@ -7,11 +7,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="layout.css">
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
 <nav class="d-print-none">
 <div>
-    <img src="rafiki.png" width="44" height="64" alt="simian spirit guide">
-    <h1>Rafiki</h1>
+    <a href="">
+        <img src="rafiki.png" width="44" height="64" alt="simian spirit guide">
+        <h1>Rafiki</h1>
+    </a>
 </div>
 </nav>
 <article>
@@ -19,7 +21,7 @@
     <h2>Deck</h2>
     <div id="deck_form">
         <div>
-            <textarea id="deck_list" cols="40" rows="10">4 Skull Rock - Isolated Fortress
+            <textarea id="deck_list" cols="40" rows="14">4 Skull Rock - Isolated Fortress
 4 Wendy Darling - Courageous Captain
 4 Mr. Smee - Bumbling Mate
 4 Mr. Smee - Captain of the Jolly Roger
@@ -47,9 +49,18 @@
 </div>
 <div id="index">
     <h2 class="d-print-none">Index</h2>
-    <div id="index_list"></div>
+    <div id="index_list">
+        <div class="index_placeholder"></div>
+    </div>
 </div>
 </article>
+<footer class="mt-auto d-print-none">
+    <div>
+        <h2 id="source">
+            <a href="https://github.com/mcandre/rafiki">source</a>
+        </h2>
+    </div>
+</footer>
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script type="text/javascript" src="rafiki.js"></script>
 </body>

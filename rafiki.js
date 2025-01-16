@@ -1,7 +1,13 @@
 const
     EntryPattern = /^([0-9]+)?\s*(.+)$/,
     LorcanaApiFetchUrl = 'https://api.lorcana-api.com/cards/fetch',
-    Chunk = 19;
+    Chunk = 19,
+    indexList = $('#index_list');
+
+function resetIndexList() {
+    indexList.empty();
+    indexList.append('<div class="index_placeholder"></div>');
+}
 
 $('#generate').on('click', function() {
     const
@@ -11,9 +17,8 @@ $('#generate').on('click', function() {
         lines = $('#deck_list').val().split('\n'),
         errors = $('#errors'),
         generate = $('#generate'),
-        generateSpinner = $('#generate_spinner'),
-        indexList = $('#index_list');
-    indexList.empty();
+        generateSpinner = $('#generate_spinner');
+    resetIndexList();
     errors.empty();
     generate.prop('disabled', !generate.prop('disabled'));
     generateSpinner.toggle();
@@ -80,6 +85,7 @@ $('#generate').on('click', function() {
 
         let indices = Object.values(cardsSorted);
         indices = [...Array(Math.ceil(indices.length/Chunk))].map(_ => indices.splice(0, Chunk));
+        indexList.empty();
 
         for (const index of indices) {
             let indexDiv = '<div class="index">';

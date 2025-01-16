@@ -1,17 +1,36 @@
-body {
-    padding: 1em;
-}
-
 @page {
     margin: 0.25cm;
 }
 
-nav, #deck_form, #errors {
+a:link, a:visited {
+    color: purple;
+    text-decoration: none;
+}
+
+a:hover {
+    font-style: italic;
+    text-decoration: none;
+}
+
+nav {
+    padding: 1em;
+}
+
+#deck_form, #errors {
     padding-bottom: 1em;
 }
 
 nav img, nav h1, #deck, #index, .index, img .color, .cost, .name {
     display: inline-block;
+}
+
+article {
+    padding: 1em;
+}
+
+footer {
+    padding: 1em;
+    text-align: right;
 }
 
 #deck, #index {
@@ -30,7 +49,7 @@ nav img, nav h1, #deck, #index, .index, img .color, .cost, .name {
     color: red;
 }
 
-.index {
+.index, .index_placeholder {
     border: 1px solid black;
     font-size: 9px;
     height: 3.5in;
@@ -38,6 +57,12 @@ nav img, nav h1, #deck, #index, .index, img .color, .cost, .name {
     padding: 0.5em;
     vertical-align: top;
     width: 2.5in;
+}
+
+.index_placeholder {
+    background-image: url("symbols/illuminary.png");
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .tcg_card {
