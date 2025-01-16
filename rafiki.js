@@ -17,6 +17,7 @@ $('#generate').on('click', function() {
         lines = $('#deck_list').val().split('\n'),
         errors = $('#errors'),
         generate = $('#generate');
+    let deckSize = 0;
     resetIndexList();
     errors.empty();
     generate.prop('disabled', !generate.prop('disabled'));
@@ -37,6 +38,8 @@ $('#generate').on('click', function() {
         }
 
         let [_m, count, name] = m;
+        count = parseInt(count);
+        deckSize += count;
 
         if (count > 4) {
             errors.append(`<p class="warning">warning: 5+ copies: ${name}</p>`);
@@ -45,11 +48,19 @@ $('#generate').on('click', function() {
         names.push(name);
     }
 
-    if (names.length === 0) {
+    if (deckSize === 0) {
         errors.append(`<p class="warning">empty deck</p>`);
         generate.text('Generate');
         generate.prop('disabled', !generate.prop('disabled'));
         return;
+    }
+
+    if (deckSize < 60) {
+        errors.append(`<p class="warning">warning: < 60 cards</p>`);
+    }
+
+    if (deckSize > 100) {
+        errors.append(`<p class="warning">warning: > 100 cards</p>`);
     }
 
     let u = new URL(LorcanaApiFetchUrl);
