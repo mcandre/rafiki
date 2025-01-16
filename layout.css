@@ -1,5 +1,9 @@
 @page {
-    margin: 0.25cm;
+    margin: 1cm;
+}
+
+body {
+    background: linear-gradient(to bottom right, #000000, #666666);
 }
 
 a:link, a:visited {
@@ -20,8 +24,21 @@ nav {
     padding-bottom: 1em;
 }
 
+#errors {
+    text-align: left;
+}
+
 nav img, nav h1, #deck, #index, .index, img .color, .cost, .name {
     display: inline-block;
+}
+
+a, h1, h2, h3, h4, h5, h6 {
+    text-shadow: 1px 1px white;
+    font-weight: bold;
+}
+
+h2, h3, h4, h5, h6 {
+    color: #666666;
 }
 
 article {
@@ -29,7 +46,7 @@ article {
 }
 
 footer {
-    padding: 2em;
+    padding: 1em;
     text-align: right;
 }
 
@@ -39,17 +56,23 @@ footer {
 
 #deck {
     margin-right: 1em;
+    text-align: right;
 }
 
 #generate_controls {
     text-align: right;
 }
 
-#errors {
+.error {
     color: red;
 }
 
+.warning {
+    color: yellow;
+}
+
 .index, .index_placeholder {
+    background: white;
     border: 1px solid black;
     font-size: 9px;
     height: 3.5in;
