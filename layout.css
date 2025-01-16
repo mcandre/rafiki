@@ -4,6 +4,7 @@
 
 body {
     background: linear-gradient(to bottom right, #000000, #666666);
+    color: #cccccc;
 }
 
 a:link, a:visited {
@@ -32,6 +33,10 @@ nav img, nav h1, #deck, #index, .index, img .color, .cost, .name {
     display: inline-block;
 }
 
+#source {
+    margin-left: 1em;
+}
+
 a, h1, h2, h3, h4, h5, h6 {
     text-shadow: 1px 1px white;
     font-weight: bold;
@@ -43,11 +48,6 @@ h2, h3, h4, h5, h6 {
 
 article {
     padding: 0 1em 0 1em;
-}
-
-footer {
-    padding: 1em;
-    text-align: right;
 }
 
 #deck, #index {
@@ -72,8 +72,7 @@ footer {
 }
 
 .index, .index_placeholder {
-    background: white;
-    border: 1px solid black;
+    color: black;
     font-size: 9px;
     height: 3.5in;
     margin: 0 0.5em 0.5em 0.5em;
@@ -82,10 +81,16 @@ footer {
     width: 2.5in;
 }
 
+.index {
+    background: white;
+    border: 1px solid black;
+}
+
 .index_placeholder {
     background-image: url("symbols/illuminary.png");
     background-position: center;
     background-repeat: no-repeat;
+    opacity: 25%;
 }
 
 .tcg_card {
