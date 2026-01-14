@@ -1,5 +1,7 @@
 # rafiki: your spiritual Lorcana deck guide
 
+[![license](https://img.shields.io/badge/license-BSD-3)](LICENSE.md)
+
 # HOMEPAGE
 
 https://mcandre.github.io/rafiki/
@@ -9,7 +11,3 @@ https://mcandre.github.io/rafiki/
 rafiki generates printable index cards!
 
 Index cards assist with Lorcana deck navigation. Good for decks large and small, simple and complex.
-
-# LICENSE
-
-BSD-2-Clause
