@@ -2,6 +2,8 @@
 
 [![license](https://img.shields.io/badge/license-BSD-3)](LICENSE.md)
 
+![sagacious monkey](rafiki.png)
+
 # HOMEPAGE
 
 https://mcandre.github.io/rafiki/
